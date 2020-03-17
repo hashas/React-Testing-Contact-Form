@@ -1,0 +1,18 @@
+Things I expect or did not expect to see in the app:
+
+1. I didn't expect "first name" field to have a "maxLength"
+2. "email" field did not test for an email type string
+3. "submit" button:
+    - not submitting any data anywhere
+    - not clearing the input fields
+
+What "expected" behaviour do I want to test for:
+
+1. that "first name" field should not have a maxLength
+2. "email" field tests for an "input=email"
+3. clear input fields after submission
+4. check "first name", "last name", and "email" all required
+
+Resources:
+
+https://github.com/testing-library/jest-dom#tohaveattribute (from ./setupTests.js)
