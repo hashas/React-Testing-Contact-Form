@@ -17,12 +17,14 @@ test("email field should be required and validate email format", () => {
 })
 
 test("submit button will submit", () => {
+
     const {getByTestId} = render (<ContactForm />)
 
     const submitButton = getByTestId('submit')
 
-    fireEvent.click(submitButton)
-
+    act(() => {
+        fireEvent.click(submitButton)
+    })
 })
 
 // test("The 'first name' field should not have a maxLength", () => {
